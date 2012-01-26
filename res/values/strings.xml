@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fishkins\' Forum</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="del_thread">Delete Thread</string>
+    <string name="del_post">Delete Post</string>
+    <string name="confirm_del_thread">Do you really want to delete this thread?</string>
+    <string name="confirm_del_post">Do you really want to delete this post?</string>
+    <string name="confirm_logout">Do you really want to log out? Your changes will be lost.</string>
+    <string name="logout">Logout</string>
+    <string name="screen_refreshed">Screen refreshed.</string>
+    <string name="gesture_load_failed">Couldn\'t load gestures.</string>
+    <string name="logged_out">Logged out.</string>
+    <string name="invalid_stored_login">Stored login information invalid. Log in again if you want to edit posts.</string>
+    <string name="invalid_login">Incorrect username or password.</string>
+    <string name="logged_in">Logged in as\u0020</string>
+    <string name="added">\u0020added</string>
+    <string name="deleted">\u0020deleted</string>
+    <string name="view">View</string>
+    <string name="edit">Edit</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="share">Share</string>
+    <string name="forum_post">Forum Post</string>
+    <string name="username_prompt">Username:</string>
+    <string name="password_prompt">Password:</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="add_thread">Add Thread</string>
+    <string name="add_thread_label">Add Thread:</string>
+    <string name="threads">Existing Threads:</string>
+    <string name="no_threads">There are no threads.</string>
+    <string name="no_posts">There are no posts.</string>
+    <string name="not_logged_in">Log in to create one.</string>
+    <string name="title_label">Title:</string>
+    <string name="message_label">Message:</string>
+    <string name="reply">Reply to Thread</string>
+    <string name="posts">Existing Posts:</string>
+</resources>

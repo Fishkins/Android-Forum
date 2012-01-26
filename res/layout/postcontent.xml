@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:padding="10px" 
+                android:id="@+id/layout">
+
+    <TextView android:id="@+id/title" 
+              android:layout_width="fill_parent" 
+              android:textColor="#FFFF00"
+              android:textStyle="bold"
+              android:textSize="18sp"
+              android:layout_height="wrap_content" />
+              
+    <TextView android:id="@+id/date"
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:textStyle="italic"
+              android:paddingBottom="5dp"
+              android:layout_below="@id/title" />
+	              
+    <TextView android:id="@+id/text" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:textColor="#3333FF"
+              android:paddingTop="5dp"
+			    		android:paddingBottom="5dp"
+              android:layout_below="@id/date" />
+              
+    <View android:id="@+id/divider"
+			    android:background="@drawable/black_white_gradient"
+			    android:layout_width="fill_parent"
+			    android:layout_height="1dp"
+			    android:layout_below="@id/text" />
+			    
+    <Button android:id="@+id/edit" 
+            android:layout_width="100dp" 
+            android:layout_height="40dp" 
+            android:visibility="gone"
+            android:layout_below="@id/divider"
+            android:text="@string/edit" />
+            
+    <Button android:id="@+id/delete" 
+            android:layout_width="100dp" 
+            android:layout_height="40dp" 
+            android:layout_alignTop="@id/edit"
+            android:layout_toRightOf="@id/edit"
+            android:visibility="gone"
+            android:text="Delete" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.Android_Forum"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10" />
+		<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+    
+        <activity android:name=".View_Main"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".View_Thread"
+                  android:label="View Thread">
+            <intent-filter>
+            		<action android:name="android.intent.action.VIEW" />
+                <action android:name="com.Android_Forum.VIEW_THREAD" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".View_Post"
+                  android:label="View Post">
+            <intent-filter>
+            		<action android:name="android.intent.action.View" />
+                <action android:name="com.Android_Forum.VIEW_POST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Edit_Post"
+                  android:label="Edit Post">
+            <intent-filter>
+            		<action android:name="android.intent.action.EDIT" />
+                <action android:name="com.Android_Forum.EDIT_POST" />
+            </intent-filter>
+        </activity>
+
+				<activity android:name=".TextEntry"
+									android:label="Enter New Name"
+									android:windowSoftInputMode="stateAlwaysVisible"
+									android:theme="@android:style/Theme.Dialog" />
+									
+				<activity android:name=".Login"
+									android:label="Login"
+									android:windowSoftInputMode="stateAlwaysVisible"
+									android:theme="@android:style/Theme.Dialog" />
+									
+    </application>
+</manifest>

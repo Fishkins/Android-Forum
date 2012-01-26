@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"		  
+			android:id="@+id/main"
+			android:layout_width="match_parent"
+		  android:layout_height="match_parent" >
+	
+	<TextView android:id="@+id/username_label" 
+	         android:layout_width="fill_parent" 
+	         android:layout_height="wrap_content" 
+	         android:text="@string/username_prompt" />
+	
+	<EditText android:id="@+id/username" 
+	         android:layout_width="fill_parent" 
+	         android:layout_height="wrap_content" 
+	         android:background="@android:drawable/editbox_background"
+	  	     android:layout_below="@id/username_label"
+	         android:gravity="top" />
+	         
+	<TextView android:id="@+id/password_label" 
+	         android:layout_width="fill_parent" 
+	         android:layout_height="wrap_content" 
+	  	     android:layout_below="@id/username"	         
+	         android:text="@string/password_prompt" />	         
+	         
+	<EditText android:id="@+id/password" 
+	         android:layout_width="fill_parent" 
+	         android:layout_height="wrap_content" 
+	         android:background="@android:drawable/editbox_background"
+	         android:layout_below="@id/password_label"
+	         android:password="true"
+	         android:gravity="top" />
+	         
+  <Button android:id="@+id/cancel"
+          android:layout_width="100dp" 
+          android:layout_height="40dp" 
+          android:layout_below="@id/password"
+          android:layout_alignParentRight="true"
+          android:layout_marginLeft="10px"
+          android:text="@string/cancel" />
+           
+  <Button android:id="@+id/ok" 
+          android:layout_width="100dp" 
+          android:layout_height="40dp" 
+          android:layout_alignTop="@id/cancel"
+          android:layout_toLeftOf="@id/cancel"
+          android:text="@string/save" />
+
+</RelativeLayout>

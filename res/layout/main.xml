@@ -1,0 +1,40 @@
+<android.gesture.GestureOverlayView 
+						xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="fill_parent"
+  					android:layout_height="fill_parent"
+  					android:id="@+id/gestures"
+  					android:eventsInterceptionEnabled="true"
+  					android:orientation="vertical">
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent">
+			<LinearLayout
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:id="@+id/layout"
+			  android:orientation="vertical">
+				  <TextView android:id="@+id/header"
+				            android:layout_width="fill_parent" 
+				            android:layout_height="wrap_content" 
+				            android:text="@string/add_thread_label"
+				            android:focusable="True"
+				            android:focusableInTouchMode="True" />
+			            
+			    <EditText android:id="@+id/entry" 
+			              android:layout_width="fill_parent"
+			              android:layout_height="wrap_content" 
+			              android:background="@android:drawable/editbox_background"
+			              android:gravity="top" />
+			              
+			    <Button android:id="@+id/add" 
+			            android:layout_width="fill_parent" 
+			            android:layout_height="wrap_content" 
+			            android:text="@string/add_thread" />
+			              
+				  <TextView android:id="@+id/threads_header"
+				            android:layout_width="fill_parent" 
+				            android:layout_height="wrap_content" 
+				            android:text="@string/threads" />  
+			</LinearLayout> 
+	</ScrollView>
+</android.gesture.GestureOverlayView>  
